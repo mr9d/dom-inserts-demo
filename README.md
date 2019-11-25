@@ -16,6 +16,6 @@ https://developer.mozilla.org/ru/docs/Web/API/Node/appendChild
 
 https://developer.mozilla.org/ru/docs/Web/API/ParentNode/append
 
-## <template>
+## &lt;template&gt;
 
 https://developer.mozilla.org/ru/docs/Web/HTML/Element/template
