@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM inserts demo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="page">
+        <header class="page__header">DOM inserts demo</header>
+        <main class="page__main">
+            <form action="#" class="form">
+                <label for="student">Student:</label>
+                <input type="text" id="student" name="student">
+                <div class="buttons">
+                    <button type="submit" class="button insert-with-inner-html">.innerHTML</button>
+                    <button type="submit" class="button insert-with-adjacent-html">.insertAdjacentHTML</button>
+                    <button type="submit" class="button insert-with-append-child">.appendChild()</button>
+                    <button type="submit" class="button insert-with-append">.append()</button>
+                    <button type="submit" class="button insert-with-template">&lt;template&gt;</button>
+                </div>
+            </form>
+            <section class="student-list"></section>
+        </main>
+        <footer class="page__footer">&copy;2K19, Aleksandr Kozlov</footer>
+    </div>
+
+    <template id="student-template">
+        <article class="student">
+            <div class="student__face"></div>
+            <div class="student__name"></div>
+            <div class="student__date"></div>
+            <div class="student__delete">x</div>
+        </article>
+    </template>
+</body>
+</html>
