@@ -1,20 +1,10 @@
-const FACES = [
-    'img/photo-1438761681033-6461ffad8d80.jpg',
-    'img/photo-1489424731084-a5d8b219a5bb.jpg',
-    'img/photo-1499996860823-5214fcc65f8f.jpg',
-    'img/photo-1519345182560-3f2917c472ef.jpg',
-    'img/photo-1519699047748-de8e457a634e.jpg',
-    'img/photo-1528892952291-009c663ce843.jpg'
-];
-
 const studentForm = document.querySelector('.form');
 const studentInput = studentForm.querySelector('input#student');
 const studentListElement = document.querySelector('.student-list');
 
 const deleteButtonClickHandler = function (evt) {
     const studentElement = evt.target.parentNode;
-    //studentElement.classList.add('student_deleted');
-    studentElement.style.backgroundImage = 'url(' + ваша_ссылка + ')';
+    studentElement.classList.add('student_deleted');
     setTimeout(function(){
         if(studentElement.parentNode) {
             studentListElement.removeChild(studentElement);
@@ -54,16 +44,16 @@ const createStudentElement = function(studentName, faceNumber) {
     return studentElement;
 };
 
-const studentTemplate = document.querySelector('#student-template').content;
-
 const createStudentElementFromTemplate = function(studentName, faceNumber) {
+    const studentTemplate = document.querySelector('#student-template').content;
+
     const studentElement = studentTemplate.cloneNode(true);
     studentElement.querySelector('.student__face').classList.add('student__face_number_' + faceNumber);
     studentElement.querySelector('.student__name').innerText = studentName;
     studentElement.querySelector('.student__date').innerText = Date();
 
     return studentElement;
-}
+};
 
 const insertWithInnerHtml = function (evt) {
     const studentName = studentInput.value;
