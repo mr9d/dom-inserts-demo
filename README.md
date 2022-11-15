@@ -14,7 +14,7 @@ The following technics are used in this demo:
 
 ## Live version
 
-Available at GitHub pages: <https://mr9d.github.io/dom-inserts-demo/> (deployed from the master branch)
+Available at GitHub pages: <https://mr9d.github.io/dom-inserts-demo/> (deployed from the `master` branch)
 
 ## Running locally
 
@@ -29,7 +29,7 @@ That’s it, no build required.
 
 The application itself is a list of students.
 
-You can add students with the provided name and remove them. While adding students, you can select how exactly you want to add them: this affects the method being used but doesn’t affect the final result. Avatar is selected randomly.
+You can add students with the provided name and remove them. While adding students, you can select how exactly you want to add them: this affects the DOM API being used but doesn’t affect the final result. Avatar is selected randomly.
 
 ## Used technologies
 
